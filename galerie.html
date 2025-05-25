@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Multimédia - 49e Promo de la Police Nationale</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>49em Promo</h1> <!-- Logo textuel -->
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="la-promotion.html">La Promotion</a></li>
+                    <li><a href="hommage.html">Hommage & Mémoire</a></li>
+                    <li><a href="galerie.html" class="active">Galerie Multimédia</a></li>
+                    <li><a href="valeurs.html">Nos Valeurs Policières</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="espace-membres.html" class="btn btn-member">Espace Membres</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Menu de navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="gallery-hero" class="hero small-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <h2>Galerie Multimédia</h2>
+                <p>Revivez les moments clés et les souvenirs de notre promotion.</p>
+            </div>
+        </section>
+
+        <section id="gallery-section" class="section-block">
+            <div class="container">
+                <h3 class="section-title">Nos Photos et Vidéos</h3>
+                <p class="section-intro">
+                    Découvrez les instants capturés lors de notre formation, des cérémonies,
+                    des activités de cohésion et des moments emblématiques.
+                </p>
+
+                <div class="gallery-filters">
+                    <button class="btn btn-secondary filter-button active" data-filter="all">Tout</button>
+                    <button class="btn btn-secondary filter-button" data-filter="photo">Photos</button>
+                    <button class="btn btn-secondary filter-button" data-filter="video">Vidéos</button>
+                    <button class="btn btn-secondary filter-button" data-filter="ceremony">Cérémonies</button>
+                    <button class="btn btn-secondary filter-button" data-filter="training">Formation</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- EXEMPLES D'ÉLÉMENTS DE GALERIE -->
+
+                    <!-- Photo 1 : Cérémonie -->
+                    <div class="gallery-item photo" data-type="image" data-category="ceremony">
+                        <img src="image/officiers.jpg" alt="Photo de cérémonie de la promotion">
+                        <div class="gallery-caption">
+                            <h4>Cérémonie officielle de la 49e</h4>
+                            <p>Un moment solennel et mémorable.</p>
+                        </div>
+                    </div>
+
+                    <!-- Vidéo 1 : Formation -->
+                    <div class="gallery-item video" data-type="video" data-category="training">
+                        <div class="video-wrapper">
+                            <iframe src="videos/hymne.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <span class="play-icon">▶</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h4>Exercice de formation sur le terrain</h4>
+                            <p>Mise en pratique des techniques d'intervention.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 2 : Cohésion -->
+                    <div class="gallery-item photo" data-type="image" data-category="cohesion">
+                        <img src="image/tanier.jpg" alt="Photo d'un moment de cohésion de la promotion">
+                        <div class="gallery-caption">
+                            <h4>Activité de cohésion</h4>
+                            <p>Renforcement de l'esprit d'équipe.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 3 : Formation -->
+                    <div class="gallery-item photo" data-type="image" data-category="training">
+                        <img src="image/crm.jpg" alt="Photo de formation au tir">
+                        <div class="gallery-caption">
+                            <h4>Journées culturelles de la 49e promotionr</h4>
+                            <p>dévouement constant au service de la République.</p>
+                        </div>
+                    </div>
+
+                    <!-- Vidéo 2 : Cérémonie -->
+                    <div class="gallery-item video" data-type="video" data-category="ceremony">
+                        <div class="video-wrapper">
+                            <iframe src="videos/chant.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <span class="play-icon">▶</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h4>Discours officiel de la cérémonie</h4>
+                            <p>Les mots inspirants des autorités.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Photo 4 : Groupe -->
+                    <div class="gallery-item photo" data-type="image" data-category="all">
+                        <img src="image/ndiaye.jpg" alt="Photo de groupe de la promotion">
+                        <div class="gallery-caption">
+                            <h4>Discours du Commandant de l’École des Sous-Officiers de Kaolack</h4>
+                            <p>L'unité et la force de notre groupe.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- AJOUTEZ D'AUTRES ÉLÉMENTS DE GALERIE ICI -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- LIGHTBOX / MODAL POUR LES IMAGES -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-button">×</span>
+        <div class="lightbox-content">
+            <!-- L'image s'affichera ici -->
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>49em Promo</h4>
+                    <p>
+                        Unité, Mémoire, Engagement.<br>
+                        Au service de la République.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="la-promotion.html">La Promotion</a></li>
+                        <li><a href="hommage.html">Hommage</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Suivez-nous (Optionnel)</h4>
+                    <ul class="social-links">
+                        <li><a href="#" aria-label="LinkedIn"><img src="img/linkedin-icon.png" alt="LinkedIn"></a></li>
+                        <!-- Ajouter d'autres icônes si pertinents -->
+                    </ul>
+                    <p class="contact-info">
+                        Email: <a href="mailto:contact@promotion49.fr">contact@promotion49.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 49em Promo de la Police Nationale. Tous droits réservés.</p>
+                <ul class="legal-links">
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
